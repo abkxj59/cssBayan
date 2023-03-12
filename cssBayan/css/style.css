@@ -46,10 +46,35 @@
   display: none;
 }
 
-.meme__title {
+.meme__label {
   display: block;
+  height: min-content;
+}
+
+.meme__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .meme__pic {
-  max-width: 100%;
+  display: block;
+  max-width: 80%;
+  height: 0;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: 50% 0;
+  margin: 0 auto;
+}
+
+.meme__input:checked + .meme__label .meme__pic,
+.meme__label:hover .meme__pic {
+  height: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.meme__input:checked + .meme__label .meme__icon,
+.meme__label:hover .meme__icon {
+  transform: rotate(45deg);
 }
