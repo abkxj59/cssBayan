@@ -49,27 +49,45 @@
 .meme__label {
   display: block;
   height: min-content;
+  cursor: pointer;
 }
 
 .meme__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
+  color: navy;
+  transition: 0.3s;
+}
+
+.accordion:hover .meme__title {
+  color: black;
+}
+
+.meme__icon {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.accordion:hover .meme__icon {
+  opacity: 1;
 }
 
 .meme__pic {
   display: block;
   max-width: 80%;
-  height: 0;
+  max-height: 0;
   opacity: 0;
   transform: scale(0);
   transform-origin: 50% 0;
   margin: 0 auto;
+  transition: 0.3s;
 }
 
 .meme__input:checked + .meme__label .meme__pic,
 .meme__label:hover .meme__pic {
-  height: auto;
+  max-height: 100vh;
   opacity: 1;
   transform: scale(1);
 }
