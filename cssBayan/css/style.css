@@ -23,3 +23,33 @@
 .page {
   font-family: "Roboto Condensed", "Tahoma", sans-serif;
 }
+
+.accordion {
+  max-width: 100vh;
+  margin: 1em auto;
+  background-color: tomato;
+  padding: 2em;
+}
+
+.accordion__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion__item {
+  border-top: 0.1em solid grey;
+  padding: 1em 0;
+}
+
+.accordion input {
+  display: none;
+}
+
+.meme__title {
+  display: block;
+}
+
+.meme__pic {
+  max-width: 100%;
+}
