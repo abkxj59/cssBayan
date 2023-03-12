@@ -31,6 +31,18 @@
   padding: 2em;
 }
 
+@media (max-width: 999px) {
+  .accordion {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion {
+    font-size: 0.6em;
+  }
+}
+
 .accordion__list {
   list-style: none;
   padding: 0;
